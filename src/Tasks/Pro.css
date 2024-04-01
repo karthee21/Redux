@@ -1,0 +1,36 @@
+.container {
+    padding: 15px;
+}
+
+.row {
+    width: 100%;
+}
+
+div .img {
+    width: 25pc;
+    height: 25pc;
+    border: 5px double orange;
+    padding: 60px;
+    border-radius: 15px;
+    background: white;
+}
+
+.row div:nth-child(2) {
+    display: grid;
+    align-content: space-around;
+}
+.row div:last-child button h5{
+    background: wheat;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    
+}
+.row div:last-child button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.cart{
+    display: none;
+}

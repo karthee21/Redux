@@ -1,0 +1,26 @@
+.card {
+    margin: 20px;
+    height: 95%;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px blue;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a img {
+    height: 250px;
+    width: 200px
+}
+.row .mt-4{
+    height: 25pc;
+}
+.main{
+    background: #0000ff6b;
+}
+/* .card a h6{
+    font-size: larger;
+} */
