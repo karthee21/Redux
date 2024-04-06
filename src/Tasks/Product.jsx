@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import "./Pro.css"
 import { add } from './CartSlice'
 import { useDispatch } from 'react-redux'
+import Cart from './Cart'; 
 
 const Product = (props) => {
   const [product, setProduct] = useState({})
@@ -19,14 +20,15 @@ const Product = (props) => {
     const { data } = await axios.get(`https://fakestoreapi.com/products/${id}`)
     setProduct(data)
   };
+  const handleItems =(product) =>{
+    
+  }
   const handleAdd = (product) => {
     dispatch(add(product))
     setAddToCart(true)
   }
-
   return (
     <>
-
       <h1>Product</h1>
       <div className='container'>
         {Object.keys(product).length > 0 ? (
@@ -41,7 +43,7 @@ const Product = (props) => {
 
               <button className='btn btn-success'
                 onClick={() => {
-                  setItems(items + 1); // Increment items
+                  handleItems(items); // Increment items
                   handleAdd(product);  // Add product to cart
                 }}>
                 Add To Cart

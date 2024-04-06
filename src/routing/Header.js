@@ -19,7 +19,7 @@ function Header() {
                                 <Link class="nav-link active" aria-current="page" to="/Products" >Products</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="/Cart"><ShoppingCart/></Link>
+                                <Link class="nav-link active" aria-current="page" to="/Cart"><ShoppingCart /></Link>
                             </li>
                             {/* <li class="nav-item">
                                 <Link class="nav-link active" aria-current="page"  ></Link>

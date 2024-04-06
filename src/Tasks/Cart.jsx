@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { remove } from './CartSlice'
 import "./Cart.css"
 
-const Cart = () => {
+const Cart = ({items}) => {
+  console.log(items)
   const cartData = useSelector((state) => state.cart)
   const dispatch = useDispatch()
   const handleRemove =(id)=>{
@@ -25,6 +26,7 @@ const Cart = () => {
                 <h2>$ {item.price}</h2>
               </div>
               <div className='btn-div col-md-4'>
+                <h4>{items}</h4>
                 <button className="btn btn-outline-danger"
                 onClick={()=>{handleRemove(item.id)}}
                 >Remove Form The Cart</button>
